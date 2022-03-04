@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#ccc;
+}
+#main{
+    width:700px;
+    margin:20px auto;
+    border:1px solid white;
+    background-color:white;
+    position: relative;
+    display:none;
+}
+.upperdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.upperdiv img{
+    border-radius: 50%;
+  margin-top:20px
+}
+
+input[type=text],input[type=password]{
+    width:92%;
+    margin:6px 15px;
+    height:28px;
+    padding:5px;
+    border:1px solid #ccc;
+    outline:none;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+label{
+    font-size: large;
+    font-weight: bold;
+    margin-left:15px
+}
+.loginbutton{
+    width:94%;
+    margin:10px 15px;
+    background-color: #04AA6D; 
+    height: 39px;
+    border:none;
+    padding:5px;
+    /* box-shadow: 0px 0px 10px black; */
+    font-size: large;
+}
+input[type="checkbox"]{
+    margin:15px
+}
+.lowerdiv1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cancilbutton{
+    width:100px;
+    margin:18px;
+    background-color: #f44336;
+    height:39px;
+    border:none;
+    font-size: large;
+    /* box-shadow: 0px 0px 10px black; */
+
+
+}
+button:hover{
+    opacity: 0.8;
+}
+
+.lowerdiv1 span a{
+    margin-right: 25px;
+    padding:10px;
+    font-size: large;
+    font-weight: bold;
+}
+#close{
+    width:28px;
+    height:35px;
+    padding:10px;
+ 
+    font-size:30px;
+    font-weight: bolder;
+    position:absolute;
+    right:0px;
+    cursor:pointer
+}
+#close:hover{
+    background-color: #ccc;
+    color:red
+}
+#btn{
+    width:150px;
+    height: 40px;
+    font-size: large;
+    border:none;
+    background-color: #04AA6D;
+    margin:20px
+}
+.animate{
+    animation:example 10s;
+    -webkit-animation: animatezoom 0.6s;
+}
+@keyframes example{
+    from{
+        transform:scale(0)
+    };
+    to{
+        transfor:scale(100)
+    };
+}
+@-webkit-keyframes animatezoom{
+    
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up form</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <h2 style="text-align: center;">model form</h2>
+    <button onclick="openModel()" id="btn" >
+        Login
+    </button>
+    <div id="main" class=".animate">
+    <form>
+        <span id="close" onclick="closeModel()">&times;</span>
+        <div class="upperdiv">
+            
+        <img src="avatar1.png"/>
+        </div>
+        <div class="lowerdiv">
+            <label>username</label><br>
+            <input type="text" placeholder="enter username"><br>
+            <label>Password</label><br>
+            <input type="password" placeholder="enter password"><br>
+            <button class="loginbutton">Login</button><br>
+            <input type="checkbox">Remember me
+        </div>
+        <div class="lowerdiv1">
+            <button  onclick="closeModel()" class="cancilbutton" id="cancilbtn">cancil</button>
+            <span>forget<a href="#">password?</a></span>
+        </div>
+    </form>
+    </div>
+    <script>
+        function openModel(){
+            var model = document.getElementById('main').style.display="block";
+            model.style.transition="0.5s"
+           
+        }
+        function closeModel(){
+            var model1 = document.getElementById('main');
+            model1.style.display="none";
+            model1.style.transition="0.5s"
+        }
+    </script>
+</body>
+</html>
